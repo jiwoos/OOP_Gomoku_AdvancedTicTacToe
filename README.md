@@ -113,7 +113,7 @@ TESTED CASES=======================================
 		=> errorlevel: (returnVal::result_quit)
 
 
-3) Done Gomoku (won) 
+3-0) Done Gomoku (won) 
 	- Diagonal (/)
 
 		  5              W
@@ -129,7 +129,7 @@ TESTED CASES=======================================
 
 		=> errorlevel: 0(returnVal::success)
 
-	- Diagonal (/) (board size 19x19, winning val = 5)
+3-1) Diagonal (/) (board size 19x19, winning val = 5)
 
 		 19
 		 18
@@ -158,7 +158,7 @@ TESTED CASES=======================================
 
 		=> errorlevel: 0(returnVal::success)
 
-	- Horizontal win (board size: 19x19, winning val: 5)
+3-2) Horizontal win (board size: 19x19, winning val: 5)
 	   
 		 19
 		 18
@@ -187,7 +187,7 @@ TESTED CASES=======================================
 
 		=> errorlevel: 0(returnVal::success)
 
-	-Diagonal (\) Boardsize: 5x5, winning val: 3
+3-3) Diagonal (\) Boardsize: 5x5, winning val: 3
 	    
 		  5           W  B
 		  4        W  B
@@ -202,7 +202,7 @@ TESTED CASES=======================================
 
 		=> errorlevel: 0(returnVal::success)
 
-	- vertical (Board size: 7x7, winning val 4)
+3-4) vertical (Board size: 7x7, winning val 4)
 		  7
 		  6        B
 		  5           W
@@ -235,7 +235,7 @@ TESTED CASES=======================================
 
 		=> errorlevel: 3 (returnVal::result_draw)
 	
- Draw Gomoku (board size: 5x5, winning val: 4) (using extra credit)
+4-1) Draw Gomoku (board size: 5x5, winning val: 4) (using extra credit)
 		input: :\repos\Lab4\lab4\x64\Debug>lab4.exe Gomoku 5 4
 		  5  B     B  W  B
 		  4  B  B  W     W
