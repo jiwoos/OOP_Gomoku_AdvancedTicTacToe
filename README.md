@@ -113,7 +113,7 @@ TESTED CASES=======================================
 		=> errorlevel: (returnVal::result_quit)
 
 
-	3) Done Gomoku (won) 
+3) Done Gomoku (won) 
 	   Diagonal (/)
 
 		  5              W
@@ -128,6 +128,8 @@ TESTED CASES=======================================
 		>> PLAYER B WON
 
 		=> errorlevel: 0(returnVal::success)
+
+
 
 	   Diagonal (/) (board size 19x19, winning val = 5)
 
@@ -158,7 +160,10 @@ TESTED CASES=======================================
 
 		=> errorlevel: 0(returnVal::success)
 
+
+
 	   Horizontal win (board size: 19x19, winning val: 5)
+	   
 		 19
 		 18
 		 17
@@ -186,7 +191,10 @@ TESTED CASES=======================================
 
 		=> errorlevel: 0(returnVal::success)
 
+
+
 	    Diagonal (\) Boardsize: 5x5, winning val: 3
+	    
 		  5           W  B
 		  4        W  B
 		  3        B
@@ -199,6 +207,7 @@ TESTED CASES=======================================
 		>> PLAYER B WON
 
 		=> errorlevel: 0(returnVal::success)
+
 
              vertical (Board size: 7x7, winning val 4)
 		  7
@@ -217,7 +226,8 @@ TESTED CASES=======================================
 		=> errorlevel: 0(returnVal::success)
 
 
-	4) Draw Gomoku (board size: 3x3, winning val: 3) (using extra credit)
+
+4) Draw Gomoku (board size: 3x3, winning val: 3) (using extra credit)
 		input: H:\repos\Lab4\lab4\x64\Debug>lab4.exe Gomoku 3 3
 
 		  3  B  W  W
@@ -232,7 +242,8 @@ TESTED CASES=======================================
 
 		=> errorlevel: 3 (returnVal::result_draw)
 	
-	 Draw Gomoku (board size: 5x5, winning val: 4) (using extra credit)
+
+  Draw Gomoku (board size: 5x5, winning val: 4) (using extra credit)
 		input: :\repos\Lab4\lab4\x64\Debug>lab4.exe Gomoku 5 4
 		  5  B     B  W  B
 		  4  B  B  W     W
@@ -246,7 +257,7 @@ TESTED CASES=======================================
 
 		=> errorlevel: 3 (returnVal::result_draw)
 
-	5) Draw TicTacToe
+5) Draw TicTacToe
 		 4
 		 3  X X O
 		 2  O O X
@@ -259,7 +270,7 @@ TESTED CASES=======================================
 
 		=> errorlevel: 3 (returnVal::result_draw)
 
-	6) Done Gomoku (default dimensions and win values)
+6) Done Gomoku (default dimensions and win values)
 
 		- Vertical win
 			 4
@@ -314,7 +325,7 @@ TESTED CASES=======================================
 			=> errorlevel: 0(returnVal::success)
 
 	
-==Extra Credit==========================================================
+=Additional Features==========================================================
 
 Users can type in dimension and winning numbers to make custom gomoku. (only works for gomoku)
 	size of the board should be greater than or equal to 3X3
