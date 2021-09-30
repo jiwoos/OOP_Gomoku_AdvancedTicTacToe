@@ -11,7 +11,7 @@ personalize the board size and the amount of pieces in a row needed to win.
 
 
 Program specifics: 
-The following specifications were not explicitly stated in the labs. Here is how our program handles the following situations:
+Here is how our program handles the following situations:
     Whitespace in the command line:
         As long as the string for the game name has no white space, the program runs. If the string is 
         split up (for example: "Tic     TacToe"), the usage message is sent.
