@@ -3,21 +3,26 @@ Gomoku game in C++
 
 ********************** variables/enum vars to avoid hard-coded constants are all documented in lab4.h ********************
 
-Jiwoo Seo, Lina Chang, Christie Chen
+Authors: Jiwoo Seo, Lina Chang, Christie Chen
 
 	This program prints out an interactive Tic-Tac-Toe game or Gomoku game for two players.
-	The command line must have the file name and either "TicTacToe" or "Gomoku" to run this program. If playing a gomoku game, the user has the option to 
+	
+	The command line must have the file name and either "TicTacToe" or "Gomoku" to run this program. 
+	
+	If playing a gomoku game, the user has the option to 
 	personalize the board size and the amount of pieces in a row needed to win.
 	
    Program specifics:
 
 	Here is how our program handles the following situations:
-    	Whitespace in the command line:
+    	
+	Whitespace in the command line:
+	
         As long as the string for the game name has no white space, the program runs. If the string is 
         split up (for example: "Tic     TacToe"), the usage message is sent.
         The game name must have the correct capitalization.
     
-   Piece Location:
+   	Piece Location:
    
         If the location string ("x,y") is badly formatted with whitespace, the program will reprompt the user. For example,
         "2,     3" would mean a reprompt.
@@ -47,11 +52,11 @@ TESTED CASES=======================================
 
 		H:\labs\lab3\lab3-jiwoos\lab3\Debug>lab3.exe arg1 arg2
 		usage: lab4.exe 'TicTacToe' or 'Gomoku'
-		=> errorlevel: 1  (returnVal::unexpeted_argnum)
+		=> errorlevel: 1  (returnVal::not_expected_argnum)
 
 		H:\labs\lab3\lab3-jiwoos\lab3\Debug>lab3.exe wronggame
 		usage: lab4.exe 'TicTacToe' or 'Gomoku'
-		=> errorlevel: 1 (returnVal::unexpeted_argnum)
+		=> errorlevel: 1 (returnVal::not_expected_argnum)
 
 		correct behavior. 1 represents wrong argument return value.
 
@@ -536,7 +541,7 @@ Users can type in dimension and winning numbers to make custom gomoku. (only wor
 				Dimension and Winning numbers should be integers: invalid stoi argument
 				usage: lab4.exe 'TicTacToe' or 'Gomoku' or 'Gomoku 5 5'
 
-			=> errorlevel: 1 (returnVal::unexpected_argnum)
+			=> errorlevel: 1 (returnVal::not_expected_argnum)
 
 			//program checks the board size and winning number and prints out an appropriate error message (invalid stoi argument) along with a usage message.
 
