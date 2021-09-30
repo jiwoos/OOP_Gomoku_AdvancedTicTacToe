@@ -129,8 +129,6 @@ TESTED CASES=======================================
 
 		=> errorlevel: 0(returnVal::success)
 
-
-
 	- Diagonal (/) (board size 19x19, winning val = 5)
 
 		 19
@@ -159,8 +157,6 @@ TESTED CASES=======================================
 		>> PLAYER B WON
 
 		=> errorlevel: 0(returnVal::success)
-
-
 
 	- Horizontal win (board size: 19x19, winning val: 5)
 	   
@@ -191,8 +187,6 @@ TESTED CASES=======================================
 
 		=> errorlevel: 0(returnVal::success)
 
-
-
 	-Diagonal (\) Boardsize: 5x5, winning val: 3
 	    
 		  5           W  B
@@ -207,7 +201,6 @@ TESTED CASES=======================================
 		>> PLAYER B WON
 
 		=> errorlevel: 0(returnVal::success)
-
 
 	- vertical (Board size: 7x7, winning val 4)
 		  7
