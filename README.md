@@ -15,7 +15,6 @@ The following specifications were not explicitly stated in the labs. Here is how
     Whitespace in the command line:
         As long as the string for the game name has no white space, the program runs. If the string is 
         split up (for example: "Tic     TacToe"), the usage message is sent.
-        
         The game name must have the correct capitalization.
     
     Piece Location:
@@ -40,7 +39,7 @@ Possible return values, documented in the lab4.h returnValue enum:
 
 
 
-TESTED CASES=============================================================================================
+TESTED CASES=======================================
 
 1) wrong argument (wrong # of arguments, wrong name)
 
@@ -115,7 +114,7 @@ TESTED CASES====================================================================
 
 
 	3) Done Gomoku (won) 
-	 - Diagonal (/)
+	   Diagonal (/)
 
 		  5              W
 		  4           W
@@ -130,7 +129,7 @@ TESTED CASES====================================================================
 
 		=> errorlevel: 0(returnVal::success)
 
-	 - Diagonal (/) (board size 19x19, winning val = 5)
+	   Diagonal (/) (board size 19x19, winning val = 5)
 
 		 19
 		 18
@@ -159,7 +158,7 @@ TESTED CASES====================================================================
 
 		=> errorlevel: 0(returnVal::success)
 
-	- Horizontal win (board size: 19x19, winning val: 5)
+	   Horizontal win (board size: 19x19, winning val: 5)
 		 19
 		 18
 		 17
@@ -187,7 +186,7 @@ TESTED CASES====================================================================
 
 		=> errorlevel: 0(returnVal::success)
 
-		- Diagonal (\) Boardsize: 5x5, winning val: 3
+	    Diagonal (\) Boardsize: 5x5, winning val: 3
 		  5           W  B
 		  4        W  B
 		  3        B
@@ -201,7 +200,7 @@ TESTED CASES====================================================================
 
 		=> errorlevel: 0(returnVal::success)
 
-		- Vertical (Board size: 7x7, winning val 4)
+             vertical (Board size: 7x7, winning val 4)
 		  7
 		  6        B
 		  5           W
