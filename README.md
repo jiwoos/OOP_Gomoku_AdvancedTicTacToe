@@ -5,19 +5,20 @@ Gomoku game in C++
 
 Jiwoo Seo, Lina Chang, Christie Chen
 
-This program prints out an interactive Tic-Tac-Toe game or Gomoku game for two players.
-The command line must have the file name and either "TicTacToe" or "Gomoku" to run this program. If playing a gomoku game, the user has the option to 
-personalize the board size and the amount of pieces in a row needed to win.
+	This program prints out an interactive Tic-Tac-Toe game or Gomoku game for two players.
+	The command line must have the file name and either "TicTacToe" or "Gomoku" to run this program. If playing a gomoku game, the user has the option to 
+	personalize the board size and the amount of pieces in a row needed to win.
+	
+   Program specifics:
 
-
-Program specifics: 
-Here is how our program handles the following situations:
-    Whitespace in the command line:
+	Here is how our program handles the following situations:
+    	Whitespace in the command line:
         As long as the string for the game name has no white space, the program runs. If the string is 
         split up (for example: "Tic     TacToe"), the usage message is sent.
         The game name must have the correct capitalization.
     
-    Piece Location:
+   Piece Location:
+   
         If the location string ("x,y") is badly formatted with whitespace, the program will reprompt the user. For example,
         "2,     3" would mean a reprompt.
         
@@ -26,7 +27,8 @@ Here is how our program handles the following situations:
         If the inputted location has already been played by either player, the program alerts the player
         that there is already a game piece there and re-prompts the player.
 
-Possible return values, documented in the lab4.h returnValue enum:
+Possible return values:
+
     0 - success: the game successfully played and ended in either a draw or a winner. 
     
     1 - not_expected_argnum: wrong number of arguments
